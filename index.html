@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Kuchupuchuu 🖤 — September 25</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:#05030a;color:#fff;font-family:"DM Sans",sans-serif;
+  overflow-x:hidden;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:20;
+  background:radial-gradient(circle at 20% 10%,rgba(255,55,130,.12),transparent 30%),
+             radial-gradient(circle at 80% 80%,rgba(145,75,255,.13),transparent 32%);
+}
+section{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  position:relative;padding:70px 20px;overflow:hidden;
+}
+.container{width:min(1050px,94vw);text-align:center;position:relative;z-index:3}
+.kicker{letter-spacing:5px;text-transform:uppercase;font-size:.72rem;opacity:.7;margin-bottom:16px}
+h1,h2{font-family:"Cormorant Garamond",serif}
+h1{font-size:clamp(3.5rem,10vw,8rem);line-height:.85}
+h2{font-size:clamp(2.4rem,6vw,5rem);line-height:.95}
+.script{font-family:"Great Vibes",cursive}
+.pink{color:#ff7baa}.gold{color:#ffd978}.soft{color:#e8dbe5}
+.glass{
+  background:linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.025));
+  border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(18px);
+  box-shadow:0 30px 80px rgba(0,0,0,.45), inset 0 1px rgba(255,255,255,.08);
+  border-radius:32px;
+}
+.btn{
+  border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);
+  color:white;padding:14px 22px;border-radius:999px;cursor:pointer;
+  font-weight:700;transition:.3s;display:inline-flex;align-items:center;gap:8px;
+}
+.btn:hover{transform:translateY(-3px);background:rgba(255,255,255,.15)}
+.scroll{position:absolute;bottom:28px;opacity:.6;font-size:.78rem;letter-spacing:2px}
+.scroll span{display:block;font-size:1.3rem;margin-top:8px;animation:bounce 1.5s infinite}
+@keyframes bounce{50%{transform:translateY(7px)}}
+
+/* floating hearts */
+.heart{position:fixed;bottom:-30px;font-size:18px;opacity:0;z-index:15;pointer-events:none;animation:floatUp 7s linear forwards}
+@keyframes floatUp{0%{transform:translateY(0) scale(.5);opacity:0}10%{opacity:.8}100%{transform:translateY(-110vh) translateX(var(--x)) scale(1.5);opacity:0}}
+
+/* page 1 */
+#one{background:radial-gradient(circle at 50% 58%,#35102a 0,#10050d 38%,#05030a 72%)}
+.moon{width:230px;height:230px;border-radius:50%;position:absolute;top:10%;left:50%;transform:translateX(-50%);
+background:radial-gradient(circle at 35% 30%,#fff8fb,#ffc8dc 30%,#a73d70 65%,transparent 66%);filter:blur(.2px);opacity:.25}
+.cake{width:280px;height:150px;margin:45px auto 25px;position:relative}
+.cake .layer{position:absolute;left:15%;width:70%;height:55px;border-radius:18px 18px 10px 10px;background:linear-gradient(#ffd5e3,#a63a68);box-shadow:0 10px 30px #000}
+.cake .layer.two{bottom:0;width:82%;left:9%;background:linear-gradient(#f5b3ca,#762342)}
+.candle{position:absolute;width:14px;height:60px;background:linear-gradient(90deg,#fff,#ff9bc0,#fff);left:50%;top:-54px;transform:translateX(-50%);border-radius:6px}
+.flame{position:absolute;width:20px;height:30px;left:50%;top:-31px;transform:translateX(-50%);
+background:#ffd978;border-radius:50% 50% 50% 0;rotate:-45deg;box-shadow:0 0 25px #ff9d45;animation:flicker .15s infinite alternate}
+@keyframes flicker{to{transform:translateX(-50%) scale(1.08) rotate(-3deg)}}
+.extinguished .flame{display:none}
+.mic-status{font-size:.8rem;opacity:.65;margin:10px}
+
+/* page 2 */
+#two{background:linear-gradient(145deg,#08040a,#170818 45%,#060308)}
+.bouquet{font-size:9rem;filter:drop-shadow(0 20px 30px rgba(255,60,140,.3));cursor:pointer;transition:.4s;user-select:none}
+.bouquet:hover{transform:scale(1.08) rotate(-2deg)}
+.countdown{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:30px 0}
+.time{min-width:100px;padding:18px 14px}.num{font-size:2.5rem;font-weight:700}.label{font-size:.65rem;letter-spacing:2px;opacity:.55}
+.count-msg{min-height:24px;color:#ffc0d7}
+
+/* page 3 */
+#three{background:radial-gradient(circle at 50% 50%,#29112b,#08040b 65%)}
+.music-card{padding:35px;max-width:760px;margin:30px auto}
+.poster{
+ width:220px;height:300px;margin:0 auto 24px;border-radius:16px;position:relative;overflow:hidden;
+ background:linear-gradient(155deg,#c7b59a 0%,#45352b 34%,#141112 72%,#050505);
+ box-shadow:0 25px 55px #000;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;text-align:left;
+}
+.poster:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 52% 40%,rgba(255,196,140,.8),transparent 18%),linear-gradient(90deg,transparent 45%,rgba(0,0,0,.7));opacity:.65}
+.poster>*{position:relative}
+.poster .vip{font-size:3rem;font-weight:800;letter-spacing:8px}.poster small{opacity:.8}
+.spotify{
+ width:58px;height:58px;border-radius:50%;background:#1ed760;color:#061b0c;display:grid;place-items:center;
+ font-size:28px;margin:18px auto;cursor:pointer;box-shadow:0 0 0 8px rgba(30,215,96,.08),0 0 35px rgba(30,215,96,.3);
+}
+#spotifyEmbed{display:none;margin:20px auto 0;max-width:600px}
+#spotifyEmbed iframe{width:100%;height:152px;border:0;border-radius:14px}
+
+/* page 4 */
+#four{background:radial-gradient(circle at 50% 30%,#2d0c1b,#07040a 68%)}
+.bigline{font-size:clamp(2rem,5vw,4.6rem);font-weight:800;max-width:900px;margin:25px auto}
+.poem{max-width:760px;margin:28px auto;padding:30px;font-family:"Cormorant Garamond",serif;font-size:1.35rem;line-height:1.7}
+.second-cake{margin:35px auto 15px}
+.flower{position:fixed;top:-60px;z-index:30;pointer-events:none;font-size:26px;animation:fall 4.8s linear forwards}
+@keyframes fall{to{transform:translateY(115vh) rotate(720deg);opacity:0}}
+.spark{position:fixed;width:5px;height:5px;background:#fff;z-index:29;pointer-events:none;border-radius:50%;animation:spark 1.4s ease-out forwards}
+@keyframes spark{to{transform:translate(var(--sx),var(--sy)) scale(0);opacity:0}}
+
+/* page 5 */
+#five{background:linear-gradient(160deg,#030206,#13050d 45%,#030206)}
+.final-heart{
+ width:min(600px,88vw);aspect-ratio:1.25;border-radius:45%;margin:30px auto;
+ display:grid;place-items:center;padding:45px;position:relative;
+}
+.final-heart:before,.final-heart:after{content:"";position:absolute;border-radius:50%;background:rgba(255,67,125,.08);inset:8%;animation:pulse 2.2s infinite}
+.final-heart:after{inset:16%;animation-delay:.6s}
+@keyframes pulse{50%{transform:scale(1.05);opacity:.5}}
+.final-text{position:relative;z-index:2}
+.final-text h2{font-size:clamp(3rem,8vw,6.5rem)}
+.final-text p{font-family:"Cormorant Garamond",serif;font-size:1.45rem;line-height:1.6;margin-top:18px}
+.signature{font-family:"Great Vibes",cursive;font-size:2.4rem;color:#ff8eb2;margin-top:22px}
+
+@media(max-width:600px){
+ .time{min-width:72px;padding:13px 8px}.num{font-size:1.8rem}
+ .cake{transform:scale(.9)}
+}
+</style>
+</head>
+<body>
+
+<section id="one">
+  <div class="moon"></div>
+  <div class="container">
+    <div class="kicker">A little universe made only for you</div>
+    <h1>Happy Birthday<br><span class="script pink">Kuchupuchuu</span> 🖤</h1>
+    <p class="soft" style="margin-top:20px">September 25 • Your day. Your little surprise.</p>
+
+    <div class="cake" id="cake1">
+      <div class="candle"><div class="flame"></div></div>
+      <div class="layer"></div><div class="layer two"></div>
+    </div>
+    <button class="btn" id="blow1">🕯️ Tap to blow the candle</button>
+    <div style="margin-top:18px"><button class="btn" id="skip1">✨ I've blown it — continue</button></div>
+  </div>
+  <div class="scroll">SCROLL INTO YOUR SURPRISE <span>⌄</span></div>
+</section>
+
+<section id="two">
+ <div class="container">
+   <div class="kicker">Chapter II</div>
+   <h2>Something is waiting<br><span class="script gold">in the roses…</span></h2>
+   <p class="soft" style="margin:20px 0">Touch the bouquet to unlock your birthday countdown.</p>
+   <div class="bouquet" id="bouquet" title="Touch me">💐</div>
+   <div class="count-msg" id="countMsg">🔒 Countdown locked</div>
+   <div class="countdown" id="countdown">
+      <div class="time glass"><div class="num" id="days">00</div><div class="label">DAYS</div></div>
+      <div class="time glass"><div class="num" id="hours">00</div><div class="label">HOURS</div></div>
+      <div class="time glass"><div class="num" id="mins">00</div><div class="label">MINUTES</div></div>
+      <div class="time glass"><div class="num" id="secs">00</div><div class="label">SECONDS</div></div>
+   </div>
+   <button class="btn" onclick="document.querySelector('#three').scrollIntoView({behavior:'smooth'})">🌹 Continue</button>
+ </div>
+</section>
+
+<section id="three">
+ <div class="container">
+  <div class="kicker">Chapter III • Our little melody</div>
+  <h2><span class="script pink">Poo Indru Neeyaga</span></h2>
+  <div class="music-card glass">
+    <div class="poster" aria-label="Velaiilla Pattadhari poster-inspired card">
+      <small>VELAIILLA PATTADHARI</small>
+      <div class="vip">VIP</div>
+      <small>Dhanush • Amala Paul<br>Anirudh Ravichander</small>
+    </div>
+    <p style="font-size:1.1rem">A song for the kind of feeling that doesn't need a perfect explanation. 🎧</p>
+    <div class="spotify" id="spotifyBtn" title="Touch to play on Spotify">▶</div>
+    <div style="opacity:.65;font-size:.8rem">Touch the Spotify button to start the song.</div>
+    <div id="spotifyEmbed">
+      <iframe src="https://open.spotify.com/embed/track/45TUsDINS6CMvccCZ25YKk?utm_source=generator"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div style="margin-top:18px">
+      <a class="btn" href="https://open.spotify.com/track/45TUsDINS6CMvccCZ25YKk" target="_blank" rel="noopener">🎵 Open in Spotify</a>
+    </div>
+  </div>
+ </div>
+</section>
+
+<section id="four">
+ <div class="container">
+   <div class="kicker">Chapter IV • Okay, now listen 😭🖤</div>
+   <div class="bigline">"ADA NI ENAKU VENUM ADI THANGAMEY THANGAMEYY THANGOOO!!!"</div>
+   <div class="poem glass">
+     <div class="script gold" style="font-size:2.5rem">For you, always…</div>
+     <p>
+       In a world full of passing moments,<br>
+       you became my favourite forever.<br>
+       If my heart had a favourite place,<br>
+       it would always be somewhere beside you.<br><br>
+       I don't need a thousand wishes today—<br>
+       I only need one:<br>
+       may your smile stay brighter than every birthday candle,<br>
+       and may I always have a reason to see it. 🖤
+     </p>
+   </div>
+
+   <div class="second-cake" id="cake2">
+      <div class="cake" style="margin:0 auto">
+       <div class="candle"><div class="flame"></div></div>
+       <div class="layer"></div><div class="layer two"></div>
+      </div>
+   </div>
+   <button class="btn" id="blow2">🕯️ Tap to blow this candle</button>
+   <button class="btn" id="celebrate" style="margin-top:8px">🌸 Do the magic</button>
+ </div>
+</section>
+
+<section id="five">
+ <div class="container">
+   <div class="kicker">The last page… but not the last feeling</div>
+   <div class="final-heart glass">
+     <div class="final-text">
+       <div class="script pink" style="font-size:2.8rem">Happy birthday</div>
+       <h2>my dear<br><span class="script gold">Kuchupuchuu</span> 🖤</h2>
+       <p>
+         <b>You are my life.</b><br>
+         Not just a chapter, not just a moment — you are one of the most beautiful
+         reasons my heart knows how to smile.<br><br>
+         I love you more than words can finish saying,<br>
+         more than a thousand stars can explain,<br>
+         more than every little heartbeat can count.
+       </p>
+       <div class="signature">I love yewww more & more. 🖤</div>
+     </div>
+   </div>
+   <p class="soft">September 25 — may this be the beginning of your most beautiful year yet. ✨</p>
+ </div>
+</section>
+
+<script>
+const $ = id => document.getElementById(id);
+
+function confettiFlowers(){
+  const flowers=['🌸','🌹','🌺','🌷','💐','✨','💖','🖤','⭐'];
+  for(let i=0;i<70;i++){
+    const el=document.createElement('div');
+    el.className='flower';
+    el.textContent=flowers[Math.floor(Math.random()*flowers.length)];
+    el.style.left=Math.random()*100+'vw';
+    el.style.animationDelay=(Math.random()*1.8)+'s';
+    el.style.fontSize=(16+Math.random()*22)+'px';
+    document.body.appendChild(el);
+    setTimeout(()=>el.remove(),6500);
+  }
+  for(let i=0;i<90;i++){
+    const s=document.createElement('div');s.className='spark';
+    s.style.left='50vw';s.style.top='50vh';
+    s.style.setProperty('--sx',(Math.random()*110-55)+'vw');
+    s.style.setProperty('--sy',(Math.random()*110-55)+'vh');
+    document.body.appendChild(s);setTimeout(()=>s.remove(),1600);
+  }
+}
+
+function hearts(){
+  const h=document.createElement('div');h.className='heart';
+  h.textContent=['🖤','💗','💖','♥','✨'][Math.floor(Math.random()*5)];
+  h.style.left=Math.random()*100+'vw';
+  h.style.setProperty('--x',(Math.random()*180-90)+'px');
+  document.body.appendChild(h);setTimeout(()=>h.remove(),7200);
+}
+setInterval(hearts,700);
+
+function extinguish(id){
+  document.querySelector('#'+id+' .flame')?.remove();
+  document.querySelector('#'+id).classList.add('extinguished');
+  confettiFlowers();
+}
+
+$('skip1').onclick=()=>{extinguish('cake1');document.querySelector('#two').scrollIntoView({behavior:'smooth'})};
+
+$('blow1').onclick=()=>{extinguish('cake1');setTimeout(()=>document.querySelector('#two').scrollIntoView({behavior:'smooth'}),700)};
+$('blow2').onclick=()=>{extinguish('cake2');setTimeout(()=>document.querySelector('#five').scrollIntoView({behavior:'smooth'}),1200)};
+$('celebrate').onclick=()=>{extinguish('cake2');setTimeout(()=>document.querySelector('#five').scrollIntoView({behavior:'smooth'}),1200)};
+
+// bouquet unlocks countdown
+let unlocked=false;
+$('bouquet').onclick=()=>{
+  unlocked=true;
+  $('countMsg').textContent='💗 Unlocked! Counting down to September 25 at 00:00…';
+  $('bouquet').style.transform='scale(1.15) rotate(3deg)';
+  setTimeout(()=>{$('bouquet').style.transform=''},400);
+};
+function updateCountdown(){
+  const target=new Date('2026-09-25T00:00:00');
+  const now=new Date();
+  let diff=target-now;
+  if(diff<0)diff=0;
+  const d=Math.floor(diff/86400000);diff-=d*86400000;
+  const h=Math.floor(diff/3600000);diff-=h*3600000;
+  const m=Math.floor(diff/60000);diff-=m*60000;
+  const s=Math.floor(diff/1000);
+  if(unlocked){
+    $('days').textContent=String(d).padStart(2,'0');
+    $('hours').textContent=String(h).padStart(2,'0');
+    $('mins').textContent=String(m).padStart(2,'0');
+    $('secs').textContent=String(s).padStart(2,'0');
+  }
+}
+setInterval(updateCountdown,1000);updateCountdown();
+
+$('spotifyBtn').onclick=()=>{
+  $('spotifyEmbed').style.display='block';
+  $('spotifyBtn').textContent='♫';
+  $('spotifyEmbed').scrollIntoView({behavior:'smooth',block:'center'});
+};
+</script>
+</body>
+</html>
